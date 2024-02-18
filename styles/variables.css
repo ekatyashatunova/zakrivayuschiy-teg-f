@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --main-text: 'Innter-Variable', sans-serif;
+    --text-card-size: 18px;
+    --accent-text: 'PressStart2P', sans-serif;
+    --background-color: #FFFFFF;
+    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+                        repeating-linear-gradient(0deg, #E7E7E7 0 2px,#1A1A1A 2px 4px),
+                        linear-gradient( #E7E7E7 0%,  #E7E7E7 0.1%, #1A1A1A 100%);
+    --text-color: #000000;
+    --border-title_color: #000000;
+    --webkit-color-stroke: #FFFFFF;
+
+
+} 

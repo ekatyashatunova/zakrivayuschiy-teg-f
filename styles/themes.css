@@ -18,11 +18,13 @@
     --color-shadow: #000000;
     --color-icon: #000000;
     --color-contour: #000000;
+    --color-heart: #FF0000;
     --color-sparks: #FF0000;
     --color-like_button: #000000;
     --border-icon_button: #000000;
     --bg-color_like-icon: #000000;
     --mix-blend-mode-text: #FFFFFF;
+    --color-floppy: #000000;
 
 }
 
@@ -39,11 +41,13 @@
     --color-shadow: #00CC14;
     --color-icon: #00CC14;
     --color-contour: #00CC14;
+    --color-heart: #FF0000;
     --color-sparks: #FF0000;
     --color-like_button: #00CC14;
     --border-icon_button: #00CC14;
     --bg-color_like-icon: #00CC14;
-    --mix-blend-mode-text:  #000000;
+    --mix-blend-mode-text:  #00CC14;
+    --color-floppy: #00CC14;
 
 }
 
@@ -60,11 +64,13 @@
     --color-shadow: #00CC14;
     --color-icon: #00CC14;
     --color-contour: #00CC14;
+    --color-heart: #FF0000;
     --color-sparks: #FF0000;
     --color-like_button: #00CC14;
     --border-icon_button: #00CC14;
     --bg-color_like-icon: #00CC14;
-    --mix-blend-mode-text: #000000;
+    --mix-blend-mode-text: #00CC14;
+    --color-floppy: #00CC14;
 }
 
 

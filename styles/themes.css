@@ -55,22 +55,22 @@
     --background-color: #000000;
     --background-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
                         repeating-linear-gradient(#007f0c 0 2px, #004306 2px 4px);
-    --text-color: #00CC14; 
-    --button-text_color: #00CC14;
-    --border-title_color: #00CC14;
-    --font-weight-bold: 800;
-    --font-weight-regular: 400;
-    --webkit-color-stroke: #00CC14;
-    --color-shadow: #00CC14;
-    --color-icon: #00CC14;
-    --color-contour: #00CC14;
-    --color-heart: #FF0000;
-    --color-sparks: #FF0000;
-    --color-like_button: #00CC14;
-    --border-icon_button: #00CC14;
-    --bg-color_like-icon: #00CC14;
-    --mix-blend-mode-text: #00CC14;
-    --color-floppy: #00CC14;
+                        --text-color: #00CC14;
+                        --button-text_color: #00CC14;
+                        --border-title_color: #00CC14;
+                        --font-weight-bold: 800;
+                        --font-weight-regular: 400;
+                        --webkit-color-stroke: #00CC14;
+                        --color-shadow: #00CC14;
+                        --color-icon: #00CC14;
+                        --color-contour: #00CC14;
+                        --color-heart: #FF0000;
+                        --color-sparks: #FF0000;
+                        --color-like_button: #00CC14;
+                        --border-icon_button: #00CC14;
+                        --bg-color_like-icon: #00CC14;
+                        --mix-blend-mode-text: #00CC14;
+                        --color-floppy: #00CC14;
 }
 
 

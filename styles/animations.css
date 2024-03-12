@@ -14,36 +14,36 @@
 */
 @keyframes moving-arrow {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     to {
-      transform: translateX(4px);
+        transform: translateX(4px);
     }
-  }
+}
 
 @keyframes menu_button {
     from {
-      transform: scaleX(0);
+        transform: scaleX(0);
     }
     to {
-      transform: scaleX(1);
+        transform: scaleX(1);
     }
-  }
+}
 
-  @keyframes heart_scale {
+@keyframes heart_scale {
     from {
-      transform: scale(1);
+        transform: scale(1);
     }
     to {
-      transform: scale(1.5);
+        transform: scale(1.5);
     }
-  }
+}
 
-  @keyframes sparks {
+@keyframes sparks {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 100;
+        opacity: 100;
     }
-  }
+}

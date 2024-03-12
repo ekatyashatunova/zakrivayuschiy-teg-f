@@ -20,14 +20,12 @@
   padding-top: 102px;
   font-family: var(--main-text);
   font-size: var(--text-card-size);
-  font-variation-settings: "wght" var();
   background-color: var(--background-color);
   background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-
 
 @media (width >= 376px) {
   .page {
@@ -59,8 +57,8 @@
   }
 
   .button {
-    min-width: 335px;
-    min-height: 51px;
+      min-width: 335px;
+      min-height: 51px;
   }
 }
 
@@ -222,6 +220,8 @@
   mix-blend-mode: hard-light;
   -webkit-text-stroke: 1px var(--webkit-color-stroke);
 }
+
+@supports((text-stroke:) or (-webkit-text-stroke:))
 
 .label_title {
   text-transform: uppercase;
@@ -387,9 +387,6 @@
   animation: like-button 0.5s ease-in-out;
 }
 
-.card__like-button.is-liked {
-}
-
 .card__like-button:focus,
 .button_floppy:focus {
   outline: none;
@@ -418,8 +415,6 @@
   width: 306px;
   height: 80px;
 }
-
-
 
 .button_floppy {
   display: flex;

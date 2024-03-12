@@ -20,6 +20,7 @@
   padding-top: 102px;
   font-family: var(--main-text);
   font-size: var(--text-card-size);
+  font-variation-settings: "wght" var(--font-weight-regular);
   background-color: var(--background-color);
   background-image: var(--background-image);
   background-position: center;
@@ -47,8 +48,19 @@
 
   .card {
       min-width: 696px;
-      min-height: 959px;
-      margin-block-end: 54px;
+  }
+
+  .title-card {
+    height: 31px;
+    margin-left: 10px;
+    margin-right: 24px;
+  }
+
+  .title {
+    margin-left: 10px;
+    margin-right: 24px;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .conteiner_image {
@@ -57,8 +69,15 @@
   }
 
   .button {
-      min-width: 335px;
-      min-height: 51px;
+    width: 335px;
+    height: 55px;
+  }
+
+  .button_floppy {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 18.5px 21px 18.5px 19px;
   }
 }
 
@@ -145,19 +164,17 @@
   width: 0%;
   height: 2px;
   background-color: var(--button-text_color);
-  animation: menu_button 0.3s ease;
-  /*transition: width 0.3s ease;*/
 }
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
   opacity: 0.6;
-  transition: width 0.3s;
+  transition: width 0.3s ease;
   /*transform: scaleX(1);*/
 }
 
 .card {
-  min-height: 760px;
+  width: 375px;
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
@@ -166,8 +183,8 @@
 }
 
 .conteiner_image {
-  height: 371px;
-  width: 371px;
+  height: 375px;
+  min-width: 375px;
   position: relative;
   z-index: 1;
   border-top: 2px solid var(--border-title_color);
@@ -181,32 +198,32 @@
   height: 100%;
 }
 
-.image_filter {
+.image_filter-sepia {
   filter: sepia(0.9);
 }
 
-.filter_image-1 {
+.filter_image-brightness {
   filter: brightness(200%);
 }
 
-.filter_image-2 {
+.filter_image-hue-rotate {
   filter: hue-rotate(40deg);
 }
 
-.filter_image-3 {
+.filter_image-invert {
   filter: invert(0.9);
 }
 
-.filter_image-4 {
+.filter_image-saturate {
   filter: saturate(8%);
 }
 
-.filter_image-5 {
+.filter_image-blur {
   filter: blur(0.3rem);
 }
 
-.filter_image-6 {
-  filter: brightness(200%);
+.filter_image-many {
+  filter: sepia(0.8) contrast(2) brightness(120%);
 }
 
 .label {
@@ -221,7 +238,17 @@
   -webkit-text-stroke: 1px var(--webkit-color-stroke);
 }
 
-@supports((text-stroke:) or (-webkit-text-stroke:))
+.label {
+  text-shadow: 1px var(--webkit-color-stroke);
+}
+
+@supports((text-stroke: 1px var(--webkit-color-stroke)) or (-webkit-text-stroke: 1px var(--webkit-color-stroke))) {
+  .label {
+      -webkit-text-stroke: 1px var(--webkit-color-stroke);
+      text-stroke: 1px var(--webkit-color-stroke);
+      text-shadow: none;
+  }
+}
 
 .label_title {
   text-transform: uppercase;
@@ -235,28 +262,27 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin-left: 25px;
-  margin-right: 28.95px;
-  margin-block-start: 25px;
-  margin-block-end: 25px;
+  margin: 25px;
 }
 
 .title {
   min-height: 31px;
   font-family: var(--main-text);
   font-size: var(--text-card-size);
-  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" var(--font-weight-bold);
   color: var(--text-color);
   line-height: 22px;
   margin-left: 10px;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-card {
   height: 52px;
   font-family: var(--main-text);
   font-size: var(--text-card-size);
-  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" var(--font-weight-bold);
   color: var(--text-color);
   line-height: 22px;
   margin-left: 10px;
@@ -412,8 +438,10 @@
 }
 
 .button {
-  width: 306px;
-  height: 80px;
+  display: flex;
+  min-width: 306px;
+  min-height: 84px;
+  justify-content: center;
 }
 
 .button_floppy {
@@ -467,7 +495,7 @@ dialog::backdrop {
 
 .button_close {
   background-color: transparent;
-  width: 257px;
-  height: 38px;
+  min-width: 257px;
+  min-height: 38px;
   border: 2px solid var(--border-title_color);
 }

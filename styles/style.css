@@ -28,14 +28,15 @@
   background-size: cover;
 }
 
-@media (width >= 376px) {
+@media (width > 376px) {
   .page {
       padding: 100px 370px;
   }
 
   .header {
-      width: 696px;
+      width: 700px;
       height: 368px;
+      margin-block-end: 100px;
   }
 
   .logo {
@@ -47,37 +48,17 @@
   }
 
   .card {
-      min-width: 696px;
-  }
-
-  .title-card {
-    height: 31px;
-    margin-left: 10px;
-    margin-right: 24px;
+    min-width: 700px;
   }
 
   .title {
     margin-left: 10px;
     margin-right: 24px;
-    justify-content: flex-start;
-    align-items: center;
   }
 
   .conteiner_image {
-      min-width: 696px;
-      min-height: 696px;
-  }
-
-  .button {
-    width: 335px;
-    height: 55px;
-  }
-
-  .button_floppy {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 18.5px 21px 18.5px 19px;
+    min-height: 700px;
+    min-width: 700px;
   }
 }
 
@@ -135,6 +116,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  z-index: 1;
 }
 
 .theme-menu__button:disabled::before {
@@ -164,17 +146,16 @@
   width: 0%;
   height: 2px;
   background-color: var(--button-text_color);
+  transition: width 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
   opacity: 0.6;
-  transition: width 0.3s ease;
-  /*transform: scaleX(1);*/
 }
 
 .card {
-  width: 375px;
+  max-width: 375px;
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
@@ -236,17 +217,12 @@
   line-height: 14px;
   mix-blend-mode: hard-light;
   -webkit-text-stroke: 1px var(--webkit-color-stroke);
-}
-
-.label {
   text-shadow: 1px var(--webkit-color-stroke);
 }
 
-@supports((text-stroke: 1px var(--webkit-color-stroke)) or (-webkit-text-stroke: 1px var(--webkit-color-stroke))) {
+@supports((-webkit-text-stroke: 1px var(--webkit-color-stroke))) {
   .label {
       -webkit-text-stroke: 1px var(--webkit-color-stroke);
-      text-stroke: 1px var(--webkit-color-stroke);
-      text-shadow: none;
   }
 }
 
@@ -289,6 +265,14 @@
   margin-right: 10px;
 }
 
+@media (width > 376px) {
+  .title-card {
+    height: 31px;
+    margin-left: 10px;
+    margin-right: 24px
+  }
+}
+
 .text-card_paragraph {
   font-weight: var(--font-weight-regular);
   font-family: var(--main-text);
@@ -324,59 +308,6 @@
 
 .like-icon {
   transform-origin: center;
-}
-
-.like-icon:hover .core {
-  fill: var(--bg-color_like-icon);
-  transition: fill 0.3s linear, fill 0.3s 0.03s linear alternate;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--bg-color_like-icon);
-  transition: fill 0.3s 0.05s linear, fill 0.3s linear alternate;
-}
-
-.like-icon:hover .heart {
-  cursor: pointer;
-}
-
-.like-icon:active .core {
-  fill: var(--color-heart);
-  transition: fill 0.3s 0.03s linear;
-}
-
-.like-icon:active .main-body {
-  fill: var(--color-heart);
-  transition: fill 0.3s 0.05s linear;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--color-heart);
-  transition: fill 0.3s 0.03s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--color-heart);
-  transition: fill 0.3s 0.05s linear;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--color-heart);
-  transition: fill 0.3s 0.06s linear;
-}
-
-.like-icon.is-liked .heart {
-  fill: var(--color-heart);
-  animation: heart_scale 0.3s 0.1s ease-in;
-  transform-origin: center;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s ease-in alternate;
 }
 
 .card__like-button {
@@ -474,7 +405,7 @@
   grid-template-rows: 63px 38px;
   gap: 30px;
   padding: 30px 42px;
-  border: var(--border-title_color);
+  border: 2px solid var(--border-title_color);
 }
 
 dialog::backdrop {
@@ -498,4 +429,31 @@ dialog::backdrop {
   min-width: 257px;
   min-height: 38px;
   border: 2px solid var(--border-title_color);
+}
+
+@media (width > 376px) {
+  .button {
+    min-width: 335px;
+    min-height: 51px;
+  }
+
+  .button_floppy {
+   display: flex;
+   flex-direction: row;
+   padding: 15px 21px 15px 19px;
+  }
+
+  .floppy_footer {
+    width: 21px;
+    height: 21px;
+  }
+
+  .dialog-disketa {
+    width: 357px;
+    height: 193px;
+  }
+
+  .button_close {
+    min-width: 293px;
+  }
 }

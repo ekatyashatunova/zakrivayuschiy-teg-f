@@ -51,14 +51,12 @@
 .like-icon:hover .core {
     fill: var(--bg-color_like-icon);
     transition: fill 0.3s linear;
-    transition: fill 0.3s 0.03s linear;
   }
   
   .like-icon:hover .main-body {
     fill: var(--bg-color_like-icon);
-    transition: fill 0.3s 0.05s linear; 
-    transition: fill 0.3s linear;
-  }
+    transition: fill 0.3s 0.05s linear;
+}
   
   .like-icon:hover .heart {
     cursor: pointer;

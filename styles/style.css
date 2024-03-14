@@ -29,14 +29,8 @@
 }
 
 @media (width > 376px) {
-  .page {
-      padding: 100px 370px;
-  }
-
   .header {
-      width: 700px;
-      height: 368px;
-      margin-block-end: 100px;
+    max-width: 700px;
   }
 
   .logo {
@@ -48,7 +42,7 @@
   }
 
   .card {
-    min-width: 700px;
+    max-width: 700px;
   }
 
   .title {
@@ -57,8 +51,7 @@
   }
 
   .conteiner_image {
-    min-height: 700px;
-    min-width: 700px;
+    max-inline-size: 696px;
   }
 }
 
@@ -67,8 +60,7 @@
 }
 
 .header {
-  min-width: 371px;
-  min-height: 323px;
+  min-width: 375px;
   background-color: var(--background-color);
   font-family: var(--accent-text);
   font-weight: var(--font-weight-regular);
@@ -76,7 +68,7 @@
   flex-direction: column;
   align-items: center;
   border: 2px solid var(--border-title_color);
-  margin-block-end: 104px;
+  margin-block-end: 100px;
   padding-top: 120px;
 }
 
@@ -92,17 +84,18 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   color: var(--text-color);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .theme-menu {
-  transform: translateX(10%);
+  transform: translate(10px, -4px);
+  margin-block-end: 18px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .theme-menu__item {
@@ -145,7 +138,7 @@
   display: block;
   width: 0%;
   height: 2px;
-  background-color: var(--button-text_color);
+  background-color: var(--button-text-color);
   transition: width 0.3s ease;
 }
 
@@ -155,7 +148,7 @@
 }
 
 .card {
-  max-width: 375px;
+  min-width: 375px;
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
@@ -164,8 +157,7 @@
 }
 
 .conteiner_image {
-  height: 375px;
-  min-width: 375px;
+  min-inline-size: 371px;
   position: relative;
   z-index: 1;
   border-top: 2px solid var(--border-title_color);
@@ -177,6 +169,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  vertical-align: bottom;
 }
 
 .image_filter-sepia {
@@ -209,8 +202,8 @@
 
 .label {
   position: absolute;
-  top: 23px;
-  right: 11px;
+  top: 25px;
+  right: 25px;
   font-family: var(--accent-text);
   font-weight: var(--font-weight-regular);
   font-size: 14px;
@@ -238,38 +231,31 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin: 25px;
+  margin: 25px 27px;
 }
 
 .title {
-  min-height: 31px;
   font-family: var(--main-text);
   font-size: var(--text-card-size);
   font-variation-settings: "wght" var(--font-weight-bold);
   color: var(--text-color);
   line-height: 22px;
-  margin-left: 10px;
-  margin-right: 10px;
-  justify-content: center;
-  align-items: center;
+  margin: 3.5px 10px 5.5px 10px;
 }
 
 .title-card {
-  height: 52px;
   font-family: var(--main-text);
   font-size: var(--text-card-size);
   font-variation-settings: "wght" var(--font-weight-bold);
   color: var(--text-color);
   line-height: 22px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 4px 10px 6px 10px;
 }
 
 @media (width > 376px) {
-  .title-card {
-    height: 31px;
-    margin-left: 10px;
-    margin-right: 24px
+  .title, 
+  .title-card  {
+    margin: 5px 24px 4px 10px;
   }
 }
 
@@ -336,7 +322,8 @@
 }
 
 .card__like-button:hover,
-.button_floppy:hover {
+.button_floppy:hover,
+.button_close:hover {
   cursor: pointer;
 }
 
@@ -350,7 +337,8 @@
 }
 
 .card__like-button:focus-visible,
-.button_floppy:focus-visible {
+.button_floppy:focus-visible,
+.button_close:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--color-shadow);
   transition: box-shadow 0.3s ease;
 }
@@ -373,6 +361,7 @@
   min-width: 306px;
   min-height: 84px;
   justify-content: center;
+  margin-block-end: 100px;
 }
 
 .button_floppy {
@@ -395,8 +384,7 @@
 }
 
 .dialog-disketa {
-  width: 341px;
-  height: 195px;
+  min-width: 341px;
 }
 
 .dialog-disketa[open] {
@@ -414,14 +402,16 @@ dialog::backdrop {
 }
 
 .disketa {
-  width: 257px;
-  height: 63px;
+  min-width: 257px;
   display: flex;
   gap: 20px;
 }
 
 .floppy_dialog {
+  width: 39px;
+  height: 39px;
   color: var(--color-floppy);
+  flex-shrink: 0;
 }
 
 .button_close {
@@ -431,10 +421,15 @@ dialog::backdrop {
   border: 2px solid var(--border-title_color);
 }
 
+.button_close:focus {
+  outline: none;
+}
+
 @media (width > 376px) {
   .button {
     min-width: 335px;
     min-height: 51px;
+    margin-block-end: 103px;
   }
 
   .button_floppy {
@@ -449,8 +444,7 @@ dialog::backdrop {
   }
 
   .dialog-disketa {
-    width: 357px;
-    height: 193px;
+    max-width: 353px;
   }
 
   .button_close {

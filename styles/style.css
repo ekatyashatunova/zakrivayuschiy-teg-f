@@ -253,8 +253,8 @@
 }
 
 @media (width > 376px) {
-  .title, 
-  .title-card  {
+  .title,
+  .title-card {
     margin: 5px 24px 4px 10px;
   }
 }

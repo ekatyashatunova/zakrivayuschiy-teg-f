@@ -332,7 +332,8 @@
 }
 
 .card__like-button:focus,
-.button_floppy:focus {
+.button_floppy:focus,
+.button_close:focus {
   outline: none;
 }
 
@@ -387,12 +388,16 @@
   min-width: 341px;
 }
 
+.dialog-disketa:focus {
+  outline: none;
+}
+
 .dialog-disketa[open] {
   background-color: var(--background-color);
   display: grid;
   grid-template-rows: 63px 38px;
   gap: 30px;
-  padding: 30px 42px;
+  padding: 30px 28px;
   border: 2px solid var(--border-title_color);
 }
 
@@ -412,6 +417,7 @@ dialog::backdrop {
   height: 39px;
   color: var(--color-floppy);
   flex-shrink: 0;
+  align-self: center;
 }
 
 .button_close {
@@ -419,10 +425,6 @@ dialog::backdrop {
   min-width: 257px;
   min-height: 38px;
   border: 2px solid var(--border-title_color);
-}
-
-.button_close:focus {
-  outline: none;
 }
 
 @media (width > 376px) {

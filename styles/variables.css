@@ -2,27 +2,21 @@
 :root {
     --font-weight-bold: 700;
     --font-weight-regular: 400;
-    --main-text: 'Innter-Variable', sans-serif;
+    --main-text: "Innter-Variable", sans-serif;
     --text-card-size: 18px;
-    --accent-text: 'PressStart2P', 'fantasy';
-    --background-color: #FFFFFF;
-    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-                        repeating-linear-gradient(180deg, #E7E7E7 0 2px,#1A1A1A 2px 4px),
-                        linear-gradient(180deg, #E7E7E7 0%, #E7E7E7 0.1%, #1A1A1A 100%);
+    --accent-text: "PressStart2P", "fantasy";
+    --background-color: #ffffff;
+    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(180deg, #e7e7e7 0 2px, #1a1a1a 2px 4px), linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.1%, #1a1a1a 100%);
     --text-color: #000000;
-    --button-text-color: #000000;
-    --border-title_color: #000000;
-    --webkit-color-stroke: #FFFFFF;
+    --border-title-color: #000000;
+    --webkit-color-stroke: #ffffff;
     --color-shadow: #000000;
     --color-icon: #000000;
     --color-contour: #000000;
-    --color-heart: #FF0000;
-    --color-sparks: #FF0000;
-    --color-like_button: #000000;
-    --border-icon_button: #000000;
-    --bg-color_like-icon: #000000;
-    --mix-blend-mode-text: #FFFFFF;
+    --color-heart: #ff0000;
+    --color-sparks: #ff0000;
+    --color-like-button: #000000;
+    --border-icon-button: #000000;
+    --mix-blend-mode-text: #ffffff;
     --color-floppy: #000000;
-
-
-} 
+}

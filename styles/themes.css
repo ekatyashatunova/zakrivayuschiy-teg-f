@@ -5,73 +5,61 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-    --background-color: #FFFFFF;
-    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-                        repeating-linear-gradient(180deg, #E7E7E7 0 2px,#1A1A1A 2px 4px),
-                        linear-gradient(180deg, #E7E7E7 0%,  #E7E7E7 0.1%, #1A1A1A 100%);
+    --background-color: #ffffff;
+    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(180deg, #e7e7e7 0 2px, #1a1a1a 2px 4px), linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.1%, #1a1a1a 100%);
     --text-color: #000000;
-    --button-text-color: #000000;
-    --border-title_color: #000000;
+    --border-title-color: #000000;
     --font-weight-bold: 700;
     --font-weight-regular: 400;
-    --webkit-color-stroke: #FFFFFF;
+    --webkit-color-stroke: #ffffff;
     --color-shadow: #000000;
     --color-icon: #000000;
     --color-contour: #000000;
-    --color-heart: #FF0000;
-    --color-sparks: #FF0000;
-    --color-like_button: #000000;
-    --border-icon_button: #000000;
-    --bg-color_like-icon: #000000;
-    --mix-blend-mode-text: #FFFFFF;
+    --color-heart: #ff0000;
+    --color-sparks: #ff0000;
+    --color-like-button: #000000;
+    --border-icon-button: #000000;
+    --mix-blend-mode-text: #ffffff;
     --color-floppy: #000000;
-
 }
 
 :root.theme-dark {
     --background-color: #000000;
-    --background-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
-                        repeating-linear-gradient(180deg, #007f0c 0 2px, #004306 2px 4px),
-                        linear-gradient(180deg, #007f0c 0%, #007f0c 0.1%, #004306 100%);
-    --text-color: #00CC14;
-    --button-text-color: #00CC14;
-    --border-title_color: #00CC14;
+    --background-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(180deg, #007f0c 0 2px, #004306 2px 4px), linear-gradient(180deg, #007f0c 0%, #007f0c 0.1%, #004306 100%);
+    --text-color: #00cc14;
+    --border-title-color: #00cc14;
     --font-weight-bold: 800;
     --font-weight-regular: 400;
-    --webkit-color-stroke: #00CC14;
-    --color-shadow: #00CC14;
-    --color-icon: #00CC14;
-    --color-contour: #00CC14;
-    --color-heart: #FF0000;
-    --color-sparks: #FF0000;
-    --color-like_button: #00CC14;
-    --border-icon_button: #00CC14;
-    --bg-color_like-icon: #00CC14;
-    --mix-blend-mode-text:  #00CC14;
-    --color-floppy: #00CC14;
+    --webkit-color-stroke: #00cc14;
+    --color-shadow: #00cc14;
+    --color-icon: #00cc14;
+    --color-contour: #00cc14;
+    --color-heart: #ff0000;
+    --color-sparks: #ff0000;
+    --color-like-button: #00cc14;
+    --border-icon-button: #00cc14;
+    --mix-blend-mode-text: #00cc14;
+    --color-floppy: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-    --background-color: #000000;
-    --background-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
-                        repeating-linear-gradient(#007f0c 0 2px, #004306 2px 4px);
-    --text-color: #00CC14;
-    --button-text-color: #00CC14;
-    --border-title_color: #00CC14;
-    --font-weight-bold: 800;
-    --font-weight-regular: 400;
-    --webkit-color-stroke: #00CC14;
-    --color-shadow: #00CC14;
-    --color-icon: #00CC14;
-    --color-contour: #00CC14;
-    --color-heart: #FF0000;
-    --color-sparks: #FF0000;
-    --color-like_button: #00CC14;
-    --border-icon_button: #00CC14;
-    --bg-color_like-icon: #00CC14;
-    --mix-blend-mode-text: #00CC14;
-    --color-floppy: #00CC14;
+        --background-color: #000000;
+        --background-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(180deg, #007f0c 0 2px, #004306 2px 4px), linear-gradient(180deg, #007f0c 0%, #007f0c 0.1%, #004306 100%);
+        --text-color: #00cc14;
+        --border-title-color: #00cc14;
+        --font-weight-bold: 800;
+        --font-weight-regular: 400;
+        --webkit-color-stroke: #00cc14;
+        --color-shadow: #00cc14;
+        --color-icon: #00cc14;
+        --color-contour: #00cc14;
+        --color-heart: #ff0000;
+        --color-sparks: #ff0000;
+        --color-like-button: #00cc14;
+        --border-icon-button: #00cc14;
+        --mix-blend-mode-text: #00cc14;
+        --color-floppy: #00cc14;
     }
 }
 
